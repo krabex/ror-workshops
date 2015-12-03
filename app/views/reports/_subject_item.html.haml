@@ -8,5 +8,5 @@
   %tbody
     - subject_item.students.each do |student|
       %tr
-        %td= student.decorate.full_name
-        %td= student.decorate.avg_notes(subject_item)
+        %td.col-md-8= student.decorate.full_name
+        %td.col-md-4= student.decorate.avg_notes(subject_item)
