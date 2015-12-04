@@ -4,7 +4,7 @@ class StudentDecorator < BaseDecorator
   end
 
   def formatted_birthdate(format = '%Y-%m-%d')
-    birthdate.strftime(format)
+    birthdate.nil? ? "" : birthdate.strftime(format)
   end
 
   def avg_notes(subject_item)
