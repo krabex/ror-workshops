@@ -4,6 +4,7 @@ en:
     teachers: Teachers
     reports: Reports
     reports_subjects: Subjects
+    student_payments: Payments
     logout: Logout
     signin: Sign in
     signup: Sign up
@@ -34,3 +35,7 @@ en:
       full_name: Full name
       avg_notes: Notes avarange
       birthdate: Birthdate
+  student_payments:
+    state:
+      unpaid: Unpaid
+      paid: Paid

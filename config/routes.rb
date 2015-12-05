@@ -7,6 +7,8 @@ Rails.application.routes.draw do
     get :subjects
   end
 
+  resources :student_payments, only: :index
+
   get '/reports/subjects', to: "reports#subjects", as: :report_subjects
 
   root to: "visitors#index"

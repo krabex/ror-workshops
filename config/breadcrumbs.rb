@@ -33,3 +33,7 @@ end
 crumb :subjects do
   link t('navbar.reports_subjects'), report_subjects_path
 end
+
+crumb :student_payments do
+  link t('navbar.student_payments'), student_payments_path
+end
