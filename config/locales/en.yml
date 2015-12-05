@@ -39,3 +39,8 @@ en:
     state:
       unpaid: Unpaid
       paid: Paid
+    columns:
+      first_name: First name
+      last_name: Last name
+      paid: is paid?
+      date_of_payment: Date of payments

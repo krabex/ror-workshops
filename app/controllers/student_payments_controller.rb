@@ -1,5 +1,5 @@
 class StudentPaymentsController < ApplicationController
-  expose(:students) { Student.includes(:student_payments)  }
+  expose(:student_payments) { StudentPayment.includes(:student)  }
 
   def index
   end
