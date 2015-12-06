@@ -7,4 +7,4 @@ Solution to wroclaw-ror-workshops-2015-december
 -------------
 Simple application for managing school subjects, teaching staff and students.
 
-Application available on [http://wro-ror-workshops.herokuapp.com/](Heroku), [https://travis-ci.org/krabex/ror-workshops](Travis)
+Application available on [Heroku](http://wro-ror-workshops.herokuapp.com/), [Travis](https://travis-ci.org/krabex/ror-workshops])
