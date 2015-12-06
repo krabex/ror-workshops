@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe StudentPaymentDecorator do
   let(:paid_payment) { create :student_payment, 'payment_deadline': Date.current + 1.day, 'date_of_payment': Date.new(2010,12,24) }
-  let(:unpaid_payment) { create :student_payment, 'payment_deadline': Date.current + 1.day }
+  let(:unpaid_payment) { create :student_payment, 'payment_deadline': Date.new(2010,12,24) }
 
   describe "#payment_status" do
     describe "when payment is paid" do
@@ -25,6 +25,13 @@ describe StudentPaymentDecorator do
     describe "when payment is unapid" do
       subject { unpaid_payment.decorate.formatted_date_of_payment }
       it { is_expected.to eq "" }
+    end
+  end
+
+  describe "#payment_month" do
+    subject { unpaid_payment.decorate.payment_month }
+    it "return payment month" do
+      is_expected.to eq "December"
     end
   end
 end

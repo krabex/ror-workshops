@@ -42,6 +42,7 @@ en:
     columns:
       first_name: First name
       last_name: Last name
+      month: Month
       amount: Amount
       payment_status: Payment status
       date_of_payment: Date of payments

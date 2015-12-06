@@ -6,4 +6,8 @@ class StudentPaymentDecorator < BaseDecorator
   def formatted_date_of_payment
     date_of_payment.nil? ? "" : date_of_payment.strftime('%Y-%m-%d')
   end
+
+  def payment_month
+    payment_deadline.strftime('%B')
+  end
 end
