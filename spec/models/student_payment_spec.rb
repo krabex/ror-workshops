@@ -8,6 +8,7 @@ RSpec.describe StudentPayment do
   describe 'database columns' do
     it { should have_db_column :payment_deadline }
     it { should have_db_column :date_of_payment }
+    it { should have_db_column :amount }
   end
 
   describe 'associations' do
